@@ -1,0 +1,4 @@
+.carousel-inner img {
+    max-height: 600px; /* 根據需要調整 */
+    object-fit: cover;
+}
