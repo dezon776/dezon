@@ -2,3 +2,8 @@
     max-height: 600px; /* 根據需要調整 */
     object-fit: cover;
 }
+
+:root {
+  bs-primary: #D3D3D3; /* 你想要的顏色 */
+
+}
