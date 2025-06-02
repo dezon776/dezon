@@ -1,267 +1,561 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>竑云電子科技
-    </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="mystyles.css"> 
 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>竑云電子科技</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="mystyles.css" />
+   <style>
+    .list-group-item a {
+      display: block;
+      color: white;
+      background-color: #0d6efd;
+      padding: 6px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .list-group-item a:hover {
+      background-color: #084298;
+    }
+
+    .accordion-button {
+      background-color: #f1f1f1;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .accordion-button {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
+<!-- <body class="p-4"> -->
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container">
-            <img src="./img/logo.png" class="rounded float-start" alt="竑云電子科技">
-          
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
-                </ul>
-            </div>
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+  <!-- <img src="./img/logo.png" class="rounded float-start" alt="竑云電子科技" /> -->
+      <img src="./img/logo.png" class="rounded float-start" alt="竑云電子科技" style="height: 50px;" />
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">首頁</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">關於我們</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="..." />
         </div>
-    </nav>
-    <header class="bg-primary text-white text-center py-5">
-        
+        <div class="carousel-item">
+          <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+
+<div class="container-fluid">
+  <h2 class="mb-4">品牌產品選單</h2>
+  <div class="row">
     
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/bl100_16_9_04.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
+    <!-- 左側選單 -->
+    <div class="col-md-3 mb-3">
+      <div class="accordion" id="brandAccordion">
+
+        <!-- AFRISO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingAfriso">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAfriso" aria-expanded="true" aria-controls="collapseAfriso">
+              AFRISO
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
+          </h2>
+          <div id="collapseAfriso" class="accordion-collapse collapse show" aria-labelledby="headingAfriso" data-bs-parent="#brandAccordion">
+            <div class="accordion-body p-2">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="afriso-1">BL100</a></li>               
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="afriso-2">  ES1</a></li>
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="afriso-3">M60x</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHINO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingChino">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChino" aria-expanded="false" aria-controls="collapseChino">
+              CHINO
             </button>
+          </h2>
+          <div id="collapseChino" class="accordion-collapse collapse" aria-labelledby="headingChino" data-bs-parent="#brandAccordion">
+            <div class="accordion-body p-2">
+              <ul class="list-group">
+               
+               
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="chino-1">recorder
+AL4000</a></li> </ul>
+                <!-- <li class="list-group-item"><a href="#" class="sub-link" data-id="chino-2">紅外線測溫儀</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- RKC -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRkc">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRkc" aria-expanded="false" aria-controls="collapseRkc">
+              RKC
+            </button>
+          </h2>
+          <div id="collapseRkc" class="accordion-collapse collapse" aria-labelledby="headingRkc" data-bs-parent="#brandAccordion">
+            <div class="accordion-body p-2">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="rkc-1">RKC</a></li>
+                <!-- <li class="list-group-item"><a href="#" class="sub-link" data-id="rkc-2">傳感器</a></li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 氧化鋯 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingZro2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZro2" aria-expanded="false" aria-controls="collapseZro2">
+              氧化鋯
+            </button>
+          </h2>
+          <div id="collapseZro2" class="accordion-collapse collapse" aria-labelledby="headingZro2" data-bs-parent="#brandAccordion">
+            <div class="accordion-body p-2">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="zro2-1">高溫型</a></li>
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="zro2-2">微氧型</a></li>                            
+                <li class="list-group-item"><a href="#" class="sub-link" data-id="zro2-3">經濟型</a></li>                            
+                
+        
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 右側內容區 -->
+    <div class="col-md-9">
+      <div id="content-area" class="border p-4 rounded bg-light">
+        🔎 請選擇左側產品項目查看詳細內容。
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JS + Bootstrap + AJAX -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const contentMap = {
+
+
+
+    "afriso-1": `
+   <div class="card mx-auto mb-4" style="max-width: 98%;">
+  <div class="row g-0">
+    <!-- 圖片區塊 -->
+    <div class="col-12 col-md-6">
+      <img src="./img/BLUELINE100 _01.png" class="img-fluid rounded-top rounded-md-start" alt="AFRISO 壓力錶">
+    </div>
+
+    <!-- 文字說明 -->
+    <div class="col-12 col-md-6">
+      <div class="card-body">
+        <h5 class="card-title text-primary fw-bold">AFRISO 壓力錶</h5>
+        <p class="card-text">
+          適用於氣體、液體和固體燃料等燃燒系統的能效調試。專為中小型石油、天然氣、固體燃料系統的煙氣分析與燃燒效率檢測設計，適用於鍋爐、壁掛爐與熱水器等設備。
+        </p>
+
+        <h6 class="fw-bold mt-3">技術特點</h6>
+        <ul>
+          <li>領先技術工藝：高清 TFT 中文彩色螢幕，高強度外殼材質，測量值鎖定功能</li>
+          <li>高量程 CO 感測器（可達 20000 ppm），有效防止感測器 CO 超載中毒損壞</li>
+          <li>內建預校準 O<sub>2</sub> 與 CO 感測器，壽命超過 2 年</li>
+          <li>2.8 吋彩色顯示幕，介面可顯示最多 8 個測量值，支援中文功能表</li>
+        </ul>
+
+        <h6 class="fw-bold mt-3">可測量參數</h6>
+        <ul>
+          <li>O<sub>2</sub>、CO、CO<sub>2</sub>、煙溫、環境溫度</li>
+          <li>自動顯示：CO 未稀釋（無空氣）、過剩空氣、COref（折算值）、燃燒效率、煙氣損失、露點、溫差</li>
+        </ul>
+
+        <h6 class="fw-bold mt-3">多功能與便利設計</h6>
+        <ul>
+          <li>集成煙氣分析、差壓壓力、溫度、流速/流量與密封性檢測功能</li>
+          <li>堅固外殼與輕薄設計提升使用舒適度</li>
+          <li>強力磁鐵與一體式設計，適合單手操作與現場作業</li>
+          <li>4.3 吋觸控大螢幕，支援戴手套操作</li>
+        </ul>
+
+        <h6 class="fw-bold mt-3">資料儲存與擴充性</h6>
+        <ul>
+          <li>多功能儲存器：一份報告可含六組測量資料，支援煙氣/壓力/流速整合儲存</li>
+          <li>支援 CAPBs 測量模組，擴展超過 35 項測量參數</li>
+          <li>標配高壽命 O<sub>2</sub> 傳感器，並支援 EuroSoftXconnect 資料傳輸 App（藍牙與二維碼）</li>
+        </ul>
+
+        <h6 class="fw-bold mt-3">續航與充電</h6>
+        <ul>
+          <li>5000mAh 鋰電池，續航達 12 小時</li>
+          <li>支援 USB-C 快速充電與資料傳輸</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+  `,
+
+
+    "afriso-2": `
+
+
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/S1.png" class="img-fluid rounded-top rounded-md-start" alt="AFRISO ES1 煙氣分析儀">
+        </div>
+
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">AFRISO ES1 煙氣分析儀</h5>
+           <p class="card-text">
+  煙氣分析儀 ES1 可滿足多種燃料燃燒系統的普遍測量需求，適用於以下應用場景：
+</p>
+<ul>
+  <li>燃油、燃氣、煤炭與顆粒物等燃料的燃燒系統</li>
+  <li>工業燃燒設備</li>
+  <li>民用暖通設備</li>
+  <li>熱電聯產（CHP）供熱系統</li>
+</ul>
+<p class="card-text">
+  ES1 能進行以下<strong>精確測量與計算</strong>：
+</p>
+<ul>
+  <li>氣體濃度：O<sub>2</sub>、CO/H<sub>2</sub>、NO、NOx</li>
+  <li>物理參數：溫度、壓力（流量）</li>
+  <li>計算參數：λ（Lambda）、燃燒效率（Eta）、煙氣損失（qA）、露點、NOxλ、λCO<sub>2</sub> 等</li>
+</ul>
+
+
+ <h5>多功能一體式設計</h5>
+  <ul>
+    <li>整合煙氣分析、壓力（含差壓）測量、溫度測量、流速／流量測量、密封性檢測等多項功能</li>
+    <li>機身輕薄堅固，採用全新設計外殼，提升保護性與操作舒適度</li>
+    <li>4.3 吋高清彩色顯示螢幕，功能表導航清晰，操作直觀</li>
+    <li>防刮鋼化玻璃螢幕，耐用性更高</li>
+    <li>機背設有強力磁鐵，支援免提操作</li>
+  </ul>
+
+  <h5>操作便利性</h5>
+  <ul>
+    <li>創新「雙模式操作」概念：滾輪 + 大觸控螢幕</li>
+    <li>單手操作流暢，支援戴手套使用</li>
+  </ul>
+
+  <h5>自動計算參數</h5>
+  <ul>
+    <li>CO<sub>2</sub>、NOx、CO（未稀釋）</li>
+    <li>溫差、燃燒效率、過量空氣係數</li>
+    <li>煙氣損失值、露點</li>
+  </ul>
+
+  <h5>智慧記錄與報告功能</h5>
+  <ul>
+    <li>一份報告最多包含 6 項測量結果</li>
+    <li>支援部分負載／全負載／平均值紀錄</li>
+    <li>不同測量類型（煙氣、壓力、流速）可整合成單一報告</li>
+    <li>最多可儲存 6 種應用測量值</li>
+  </ul>
+
+  <h5>擴充與連接性</h5>
+  <ul>
+    <li>可與 <strong>CAPBs®</strong> 測量儀結合，擴展超過 35 項測量參數</li>
+    <li>支援 <strong>EuroSoft® connect</strong> 應用程式</li>
+    <li>藍牙／二維碼傳輸資料，現場記錄更方便</li>
+  </ul>
+
+  <h5>續航與電源</h5>
+  <ul>
+    <li>內建高容量鋰電池（5,000 mAh），可連續運行 12 小時</li>
+    <li>支援 USB-C 快速充電與資料傳輸</li>
+  </ul>
+
+  <h5>耐用性與保障</h5>
+  <ul>
+    <li>標配高壽命 O<sub>2</sub> 感測器，提供更長使用壽命與質保</li>
+  </ul>
+
+          </div>
+        </div>
+      </div>
+
+
+  `,
+
+
+    "afriso-3": `
+    
+<div class="card mx-auto mb-4" style="max-width: 98%;">
+  <div class="row g-0">
+    <!-- 圖片區塊 -->
+    <div class="col-12 col-md-6">
+      <img src="./img/M60x-1.png" class="img-fluid rounded-top rounded-md-start" alt=" M60x 煙氣分析儀">
+    </div>
+
+    <!-- 文字說明 -->
+    <div class="col-12 col-md-6">
+      <div class="card-body">
+        <h5 class="card-title text-primary fw-bold"> M60x 煙氣分析儀</h5>
+        <p class="card-text">
+          M60x 煙氣分析儀廣泛適用於以燃氣、燃油、燃煤及其它固體顆粒物為燃料的各種中小型燃燒系統，以及 CO 濃度安全檢查。尤其是您測量固體燃料系統的理想選擇（如：以木材為燃料的燃燒系統，在燃燒不完全的情況下煙氣中 CO 的暫態峰值濃度可達到 20000 ppm 甚至更高）。
+          <br><br>
+          適用範例包括：燃燒器、燃油鍋爐、燃煤鍋爐等各種熱能設備的煙氣檢測與燃燒效率調節，以及火力發電廠脫硫脫硝工程的煙氣檢測等。
+        </p>
+        <h6 class="fw-bold mt-3">產品特點：</h6>
+        <ul class="mb-0">
+          <li>小巧輕便，易於攜帶，堅固耐用的保護套背部帶有磁鐵吸附功能，可實現免提操作</li>
+          <li>3.5 吋 TFT 彩色顯示幕可同時顯示 8 行 / 4 行 / 1 行測量值</li>
+          <li>可配備六種感測器（O<sub>2</sub>、CO/H<sub>2</sub>、COhigh、NO、SO<sub>2</sub>、CO<sub>2</sub> 紅外或 NO<sub>2</sub>）</li>
+          <li>氧 ECO 傳感器具有延長的使用壽命並且可抵抗生物燃料</li>
+          <li>可計算參數：CO 未稀釋（無空氣）、λ、CO<sub>2</sub>、Eta 效率、煙氣損失、露點、溫差</li>
+          <li>標配低能耗藍牙、紅外介面，可連接印表機即時列印或儲存測量資料</li>
+          <li>提供二維碼功能，可透過手機 / 平板電腦傳輸測量資料至任何管理軟體</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  `,
+
+
+    "chino-1": `
+    
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/recorder_al4000.png" class="img-fluid rounded-top rounded-md-start" alt="al4000">
+        </div>
+
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">AL4000</h5>
+           
+             
+          </div>
+        </div>
+      </div>
+
+
+
+
+  `,
+
+
+    "chino-2":`
+    
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/BLUELINE100 _01.png" class="img-fluid rounded-top rounded-md-start" alt="AFRISO 壓力錶">
+        </div>
+
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">AFRISO 壓力錶</h5>
+            <p class="card-text">
+              AFRISO 壓力錶是一款精密的工業用壓力量測設備，廣泛應用於各類液壓與氣壓系統中，確保機械運作的安全與穩定。
+              它採用高品質的不鏽鋼外殼與銅合金測量機構，能夠承受惡劣環境的高壓運作，並具備優異的抗震與防塵設計。
+              此壓力錶適用於石化、食品、製藥、環保等多元產業，尤其在需要高精度讀值與穩定性能的場景下表現卓越。
+              具備多種表面尺寸與壓力範圍選擇，使用者可根據實際應用需求進行客製化搭配，為現代工業控制提供可靠的解決方案。
+            </p>
+          </div>
+        </div>
+      </div>
+
+  `,
+
+
+    "rkc-1": `
+   
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/RKC.png" class="img-fluid rounded-top rounded-md-start" alt="RKC">
+        </div>
+
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">RKC</h5>
+            
+          </div>
+        </div>
+      </div>
+
+  `,
+
+
+    "rkc-2": `
+    
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/BLUELINE100 _01.png" class="img-fluid rounded-top rounded-md-start" alt="AFRISO 壓力錶">
+        </div>
+
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">AFRISO 壓力錶</h5>
+            <p class="card-text">
+              AFRISO 壓力錶是一款精密的工業用壓力量測設備，廣泛應用於各類液壓與氣壓系統中，確保機械運作的安全與穩定。
+              它採用高品質的不鏽鋼外殼與銅合金測量機構，能夠承受惡劣環境的高壓運作，並具備優異的抗震與防塵設計。
+              此壓力錶適用於石化、食品、製藥、環保等多元產業，尤其在需要高精度讀值與穩定性能的場景下表現卓越。
+              具備多種表面尺寸與壓力範圍選擇，使用者可根據實際應用需求進行客製化搭配，為現代工業控制提供可靠的解決方案。
+            </p>
+          </div>
+        </div>
+      </div>
+
+  `,
+
+
+    "zro2-1": `
+ 
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/HT01.png" class="img-fluid rounded-top rounded-md-start" alt="">
+                  <img src="./img/HT02.png" class="img-fluid rounded-top rounded-md-start" alt="">
+                 <img src="./img/HT03.png" class="img-fluid rounded-top rounded-md-start" alt="">
+       
+        
           </div>
 
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">高溫型</h5>
+            <p class="card-text">
+                     </p>
+          </div>
+        </div>
+      </div>
 
-    </header>
-    <div class="container my-5">
-        <section id="about" class="text-center">
-
-            <H1 class=" fw-bold text-primary">產品介紹</H1>
-            <p></p>
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-                  <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">德國 Afriso</button>
-                  <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">CHINO</button>
-                  <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">RKC</button>
-                  <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">氧化鋯</button>
-                </div>
-
-                <div class="tab-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                    
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-
-                      
+  `,
 
 
+    "zro2-2":`
 
-                      <div class="col">
-                        <div class="card min-vh-80">
-                          
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold text-primary">AFRISO BL100</h5>
-                            <p class="card-text fw-bold text-primary">經濟型煙道氣體效率分析儀</p>
-                            <img src="./img/BLUELINE100 _01.png" class="card-img-top" alt="...">
+ 
+ <div class="card mx-auto mb-4" style="max-width: 98%;">
+      <div class="row g-0">
+        <!-- 圖片區塊 -->
+        <div class="col-12 col-md-6">
+          <img src="./img/SO.png" class="img-fluid rounded-top rounded-md-start" alt="HT01">
+        </div>
 
-                          </div>
-                        </div>
-                      </div>
-
-                     
-                
-
-      
-                      <div class="col">
-                        <div class="card min-vh-80">
-                         
-                          <div class="card-body fw-bold text-primary">
-                            <h5 class="card-title fw-bold text-primary">AFRISO ES1</h5>
-                            <p class="card-text">觸控型煙道氣體效率分析儀</p>
-                            <img src="./img/S1.png" class="card-img-top" alt="...">
-                          </div>
-                        </div>
-                      </div>
-
-
-                            
-                      <div class="col">
-                        <div class="card min-vh-80">
-                         
-                          <div class="card-body">
-                            <h5 class="card-title fw-bold text-primary">AFRISO M60x</h5>
-                            <p class="card-text fw-bold text-primary">煙氣分析儀 Multilyzer STx M60x</p>
-                            <img src="./img/M60x-1.png" class="card-img-top" alt="...">
-                          </div>
-                        </div>
-                      </div> 
-
-
-                    </div>
-                  </div>
-
-
-                  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                   
-
-
-
-                    <div class="col">
-                      <div class="card min-vh-80">
-                       
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold text-primary">recorder</h5>
-                          <p class="card-text fw-bold text-primary">AL4000</p>
-                          <img src="./img/recorder_al4000.png" class="card-img-top" alt="...">
-                        </div>
-                      </div>
-                    </div>
-                  
-                  </div>
-
-
-                  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                    
-                      <div class="col">
-                        <div class="card min-vh-80">
-                         
-                          <div class="card-body fw-bold text-primary">
-                            <h5 class="card-title fw-bold text-primary">RKC</h5>
-                            <p class="card-text">RKC</p>
-                            <img src="./img/RKC.png" class="card-img-top" alt="...">
-                          </div>
-                        </div>
-                      </div>
+        <!-- 文字說明 -->
+        <div class="col-12 col-md-6">
+          <div class="card-body">
+            <h5 class="card-title text-primary fw-bold">微氧型</h5>
+            
+          </div>
+        </div>
+      </div>
 
 
 
 
 
-                  </div>
+
+  `
+
+
+  
+
+  
+  };
 
 
 
+  
+  document.querySelectorAll(".sub-link").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const id = this.dataset.id;
+      const contentArea = document.getElementById("content-area");
+      contentArea.innerHTML = "🔄 載入中...";
+      setTimeout(() => {
+        contentArea.innerHTML = contentMap[id] || "<p>❌ 找不到內容。</p>";
+        window.scrollTo({ top: contentArea.offsetTop - 60, behavior: 'smooth' });
+      }, 300);
+    });
+  });
 
+  // 自動點選展開主選單的第一個子項目
+  document.querySelectorAll(".accordion-collapse").forEach(collapse => {
+    collapse.addEventListener("show.bs.collapse", function () {
+      const firstLink = this.querySelector(".sub-link");
+      if (firstLink) firstLink.click();
+    });
+  });
 
-                  
-                  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-
-
-                    <div class="col">
-                      <div class="card min-vh-80">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold text-primary">高溫型</h5>
-                          <p class="card-text fw-bold text-primary">01</p>
-                          <img src="./img/HT01.png" class="card-img-top" alt="...">
-
-                        </div>
-                      </div>
-                    </div>
-
-                   
-              
-
-    
-                    <div class="col">
-                      <div class="card min-vh-80">
-                       
-                        <div class="card-body fw-bold text-primary">
-                          <h5 class="card-title fw-bold text-primary">高溫型</h5>
-                          <p class="card-text">02</p>
-                          <img src="./img/HT02.png" class="card-img-top" alt="...">
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div class="col">
-                      <div class="card min-vh-80">
-                        
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold text-primary">高溫型</h5>
-                          <p class="card-text fw-bold text-primary">03</p>
-                          <img src="./img/HT03.png" class="card-img-top" alt="...">
-
-                        </div>
-                      </div>
-                    </div>
-
-                   
-              
-
-    
-                    <div class="col">
-                      <div class="card min-vh-80">
-                       
-                        <div class="card-body fw-bold text-primary">
-                          <h5 class="card-title fw-bold text-primary">微氧型</h5>
-                          <p class="card-text">微氧型</p>
-                          <img src="./img/SO.png" class="card-img-top" alt="...">
-                        </div>
-                      </div>
-                    </div>
-
-
-
-
-                    <div class="col">
-                      <div class="card min-vh-80">
-                       
-                        <div class="card-body fw-bold text-primary">
-                          <h5 class="card-title fw-bold text-primary">經濟型</h5>
-                          <p class="card-text">經濟型</p>
-                          <img src="./img/EC.png" class="card-img-top" alt="...">
-                        </div>
-                      </div>
-                    </div>
-
-
-
-                  </div>
-
-
-
-
-                  </div>
-
-
-
-
-                </div>
-              </div>
-            <P></P>
-            <h2>關於我們</h2>
-            <p>我們致力於提供最好的服務給客戶。</p>
-        </section>
-        <section id="contact" class="text-center mt-5">
+  // 頁面載入時預設載入 AFRISO 第一項
+  window.addEventListener("DOMContentLoaded", () => {
+    const defaultLink = document.querySelector("#collapseAfriso .sub-link");
+    if (defaultLink) defaultLink.click();
+  });
+</script>
+<section id="contact" class="text-center mt-5">
             <h2>聯絡我們</h2>
             <p>Email: hongyun110@outlook.com</p>
             <p>聯絡專線:0916903902，0966831724 </p>
@@ -271,6 +565,5 @@
     <footer class="bg-dark text-white text-center py-3">
         &copy; 2025 竑云電子科技. All rights reserved.
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
