@@ -89,9 +89,23 @@ font-size: .9375rem;
     @media (min-width: 768px) {
       .product-text {
         width: 60%; /* 保留文字區域的寬度 */
-      }
-    }
 
+           }
+
+
+
+        
+
+  .card-text,
+  .card-body ul,
+  .card-body li,
+  .card-body h6 {
+    font-size: .9375rem;
+  }
+
+  .feature-title {
+    color: #0081bb !important;
+  }
     .navbar-toggler-icon {
   background-color: #ffffff; /* 白色按鈕圖示 */
 }
